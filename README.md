@@ -21,7 +21,7 @@ A **Forward Proxy** represents the **Client**. It sits in front of one or more c
 ```mermaid
 graph LR
     subgraph Local Network
-    Client[Client (User)] --> FP[Forward Proxy]
+    Client["Client (User)"] --> FP[Forward Proxy]
     end
     FP --> Internet
     Internet --> ServerA[Server A]
@@ -45,7 +45,7 @@ A **Reverse Proxy** represents the **Server**. It sits in front of one or more w
 
 ```mermaid
 graph LR
-    Client[Client (User)] --> Internet
+    Client["Client (User)"] --> Internet
     Internet --> RP[Reverse Proxy]
     
     subgraph Internal Network
